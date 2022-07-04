@@ -32,7 +32,37 @@ postMerge :
         configFile : "./test/mocha.opts"  
       
         
+preMerge :
+  preRun: 
+    command:
+      - npm install  
+      - npm run bootstrap
+      - npm run lint
       
+  
+  subModules:          #Not to be changed
+      
+        
+      - name: geofire-common      
+        path : "./packages/geofire-common/"
+        pattern: 
+          - "./test/Main.test.ts"
+        
+        framework : mocha
+        
+        configFile : "./test/mocha.opts"
+        
+      - name: geofire      
+        path : "./packages/geofire/"
+        pattern: 
+          - "./test/*.test.ts"
+        
+
+        
+        framework : mocha
+      
+        
+        configFile : "./test/mocha.opts"        
         
 
   
