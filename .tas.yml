@@ -19,6 +19,9 @@ postMerge :
         
         configFile : "./test/mocha.opts"
         
+        parallelism: 2
+        splitMode:file
+        
       - name: geofire      
         path : "./packages/geofire/"
         pattern: 
@@ -30,6 +33,7 @@ postMerge :
       
         
         configFile : "./test/mocha.opts"  
+        parallelism: 3
       
         
       
