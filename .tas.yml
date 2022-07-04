@@ -1,0 +1,40 @@
+---
+postMerge :
+  preRun: 
+    command:
+      - npm install  
+      - npm run bootstrap
+      - npm run lint
+      
+  
+  subModules:          #Not to be changed
+      
+        
+      - name: geofire-common      
+        path : "./packages/geofire-common/"
+        pattern: 
+          - "./test/Main.test.ts"
+        
+        framework : mocha
+        
+        configFile : "./test/mocha.opts"
+        
+      - name: geofire      
+        path : "./packages/geofire/test"
+        pattern: 
+          - "./test/*.test.ts"
+        
+
+        
+        framework : mocha
+      
+        
+        configFile : "./test/mocha.opts"  
+      
+        
+      
+        
+
+  
+version : 2.0.1
+# nodeVersion : 17.3.1
