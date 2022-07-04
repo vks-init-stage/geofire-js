@@ -20,7 +20,7 @@ postMerge :
         configFile : "./test/mocha.opts"
         
       - name: geofire      
-        path : "./packages/geofire/test"
+        path : "./packages/geofire/"
         pattern: 
           - "./test/*.test.ts"
         
