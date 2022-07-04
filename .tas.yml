@@ -20,7 +20,7 @@ postMerge :
         configFile : "./test/mocha.opts"
         
         parallelism: 2
-        splitMode:file
+        splitMode: file
         
       - name: geofire      
         path : "./packages/geofire/"
