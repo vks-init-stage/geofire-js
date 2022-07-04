@@ -19,8 +19,6 @@ postMerge :
         
         configFile : "./test/mocha.opts"
         
-        parallelism: 2
-        splitMode: file
         
       - name: geofire      
         path : "./packages/geofire/"
@@ -33,7 +31,6 @@ postMerge :
       
         
         configFile : "./test/mocha.opts"  
-        parallelism: 3
       
         
       
@@ -42,4 +39,4 @@ postMerge :
   
 version : 2.0.1
 # nodeVersion : 17.3.1
-#test2
+#test
