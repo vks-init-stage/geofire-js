@@ -18,6 +18,7 @@ postMerge :
         framework : mocha
         parallelism: 2
 
+
         
         configFile : "./test/mocha.opts"
         
