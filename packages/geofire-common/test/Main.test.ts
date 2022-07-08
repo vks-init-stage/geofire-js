@@ -14,6 +14,7 @@ const expect = chai.expect;
 
 describe('geoFireUtils Tests:', () => {
   describe('Parameter validation:', () => {
+    
     it('validateKey() does not throw errors given valid keys', () => {
       validKeys.forEach((validKey) => {
         expect(() => validateKey(validKey)).not.to.throw();
