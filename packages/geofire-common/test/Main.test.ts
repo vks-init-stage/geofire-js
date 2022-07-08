@@ -27,6 +27,7 @@ describe('geoFireUtils Tests:', () => {
       });
     });
 
+    
     it('validateLocation() does not throw errors given valid locations', () => {
       validLocations.forEach((validLocation, i) => {
         expect(() => validateLocation(validLocation as Geopoint)).not.to.throw();
