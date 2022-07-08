@@ -116,6 +116,7 @@ describe('geoFireUtils Tests:', () => {
     });
   });
 
+  
   describe('Geohashing:', () => {
     it('geohashForLocation() encodes locations to geohashes given no precision', () => {
       expect(geohashForLocation([-90, -180])).to.be.equal('000000000000'.slice(0, GEOHASH_PRECISION));
